@@ -18,7 +18,6 @@ This project sets up a complete CI/CD pipeline using **GitHub Actions** to build
 
 ## 📂 Project Structure
 
-.
 ├── app.py # Flask app (or main app file)
 
 ├── Dockerfile # Docker build file
