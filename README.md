@@ -1,6 +1,6 @@
 # CI/CD Pipeline with GitHub Actions & Docker
 
-This project sets up a complete CI/CD pipeline using **GitHub Actions** to build, test, and deploy a Dockerized app locally (or on Minikube), with images pushed to **Docker Hub**.
+This project sets up a complete CI/CD pipeline using **GitHub Actions** to build, test, and deploy a Dockerized app locally, with images pushed to **Docker Hub**.
 
 ---
 
