@@ -22,8 +22,6 @@ This project sets up a complete CI/CD pipeline using **GitHub Actions** to build
 
 ├── Dockerfile # Docker build file
 
-├── docker-compose.yml # (optional) Compose setup
-
 ├── requirements.txt # Python dependencies
 
 ├── .github/workflows/
