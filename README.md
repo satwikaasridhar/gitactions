@@ -79,6 +79,15 @@ docker pull satwikaasridhar/myapp:latest
 docker run -d -p 5000:5000 satwikaasridhar/myapp:latest
 📸 Deliverables
 ✅ GitHub repo: https://github.com/satwikaasridhar/gitactions
+![Screenshot (99)](https://github.com/user-attachments/assets/40c7371b-f70b-4ba2-88fe-2d87cbb23aa3)
+
 ✅ Docker Hub image
+![Screenshot (102)](https://github.com/user-attachments/assets/ac3a8d87-8438-49f9-9098-e1f721be9bef)
+
 ✅ CI/CD Workflow run results (see GitHub Actions tab)
-✅ Screenshots of deployed app 
+![Screenshot (100)](https://github.com/user-attachments/assets/1739e85e-1de4-49c3-aca6-ef465b123f8e)
+
+✅ Screenshots of deployed app
+![Screenshot (104)](https://github.com/user-attachments/assets/7fcfcd0f-4f5d-47ce-ae2f-f9f56858005d)
+![Screenshot (105)](https://github.com/user-attachments/assets/dce7029d-b037-4b03-aca2-3908583f7bed)
+
