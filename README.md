@@ -27,38 +27,32 @@ This project sets up a complete CI/CD pipeline using **GitHub Actions** to build
 │ └── ci-cd.yml # GitHub Actions workflow
 └── README.md # This file
 
-yaml
-Copy
-Edit
 
 ---
 
 ## ⚙ Setup Instructions
 
 ### 1️⃣ Clone the repository
-```bash
+
 git clone https://github.com/satwikaasridhar/gitactions.git
 cd gitactions
-2️⃣ Build and run locally (Docker)
-bash
-Copy
-Edit
+2️⃣ # Build and run locally (Docker)
+
 docker build -t satwikaasridhar/myapp:latest .
 docker run -d -p 5000:5000 satwikaasridhar/myapp:latest
 Visit http://localhost:5000 to see the app.
 
-3️⃣ Configure Docker Hub
+3️⃣ # Configure Docker Hub
 Create a Docker Hub repository (e.g., satwikaasridhar/myapp).
 
 Generate Docker Hub access token for GitHub Actions.
 
-Add it as a GitHub secret:
+# Add it as a GitHub secret:
 
-DOCKER_USERNAME
+`DOCKER_USERNAME`
+`DOCKER_PASSWORD`
 
-DOCKER_PASSWORD
-
-4️⃣ GitHub Actions CI/CD Workflow
+4️⃣ # GitHub Actions CI/CD Workflow
 The .github/workflows/ci-cd.yml file:
 
 Runs on every push.
@@ -69,14 +63,11 @@ Builds the Docker image.
 
 Pushes the image to Docker Hub.
 
-🐳 Pulling and Deploying Locally
-On your local machine (or Minikube):
+🐳 # Pulling and Deploying Locally
+On your local machine:
 
-bash
-Copy
-Edit
 docker pull satwikaasridhar/myapp:latest
-docker run -d -p 5000:5000 satwikaasridhar/myapp:latest
+docker run -d -p 5000:5000 satwikaasridhar/gitactions:latest
 📸 Deliverables
 ✅ GitHub repo: https://github.com/satwikaasridhar/gitactions
 ![Screenshot (99)](https://github.com/user-attachments/assets/40c7371b-f70b-4ba2-88fe-2d87cbb23aa3)
