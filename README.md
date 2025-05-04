@@ -20,11 +20,17 @@ This project sets up a complete CI/CD pipeline using **GitHub Actions** to build
 
 .
 ├── app.py # Flask app (or main app file)
+
 ├── Dockerfile # Docker build file
+
 ├── docker-compose.yml # (optional) Compose setup
+
 ├── requirements.txt # Python dependencies
+
 ├── .github/workflows/
+
 │ └── ci-cd.yml # GitHub Actions workflow
+
 └── README.md # This file
 
 
