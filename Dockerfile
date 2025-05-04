@@ -1,28 +1,13 @@
-# ---------- Stage 1: Build ----------
-FROM node:20-alpine AS build
+FROM python:3.11-slim
 
 WORKDIR /app
 
-# Only copy package files first to leverage Docker cache
-COPY package*.json ./
+COPY requirements.txt .
+RUN pip install -r requirements.txt
 
-# Install dependencies
-RUN npm ci --only=production
-
-# Copy the rest of the code
 COPY . .
 
-# ---------- Stage 2: Run ----------
-FROM node:20-alpine
+EXPOSE 5000
 
-WORKDIR /app
-
-# Copy only the built app + node_modules from the build stage
-COPY --from=build /app /app
-
-# Expose port (adjust to your app’s port)
-EXPOSE 3000
-
-# Start the app
-CMD ["npm", "start"]
+CMD ["python", "app.py"]
 
